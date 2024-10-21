@@ -1,0 +1,385 @@
+body {
+    background-image: url("../image/fruit-background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: Arial, sans-serif;
+
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Fredoka One', sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    color: #FF9800;
+    text-shadow: 3px 3px 5px #f0c507d3;
+    border-bottom: 2px solid #FF9800;
+    margin: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    display: inline-block;
+}
+
+.body-section {
+    display: flex;
+    flex-direction: row;
+
+}
+
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+
+    width: 100%;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin-top: 90px;
+
+}
+
+.body-section {
+    display: flex;
+    flex-direction: row;
+}
+
+.control-form {
+
+    display: flex;
+    flex-direction: column;
+    align-self: start;
+    align-items: center;
+    margin-top: 90px;
+    margin-left: 30px;
+    max-width: 400px;
+    min-width: 300px;
+    width: 100%;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+
+}
+
+#game-board {
+    display: grid;
+    margin: 10px;
+
+}
+
+.control-form label {
+
+    color: white;
+    margin: 5px;
+}
+
+.control-form button {
+    border: 4px solid rgb(101, 238, 10);
+}
+
+#grid-button {
+    text-align: center;
+    margin: 5px;
+}
+
+#grid-controls {
+    border-bottom: 2px solid rgb(101, 238, 10);
+}
+
+
+.card {
+    font-size: 3rem;
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    margin: 2px;
+    border: 5px solid rgba(255, 152, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+
+.hidden {
+    background-color: #849e10;
+}
+
+.hidden-button {
+    background-color: red;
+}
+
+.win-message {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 2em;
+    color: rgb(51, 255, 0);
+}
+
+button {
+    background-color: #FFEB3B;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 8px;
+    color: black;
+    padding: 10px 20px;
+    margin: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#reset-button {
+    text-align: center;
+}
+
+button:hover {
+    color: red;
+    background-color: green;
+}
+
+@media (max-width: 600px) {
+    .header {
+        width: 100%;
+    }
+
+    header h1 {
+        font-size: 25px;
+    }
+
+    body {
+        background-image: url("../image/fruit-background.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: repeat;
+        font-family: Arial, sans-serif;
+        height: 100vh;
+
+    }
+
+    .body-section {
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+
+
+        width: 100%;
+        min-width: 270px;
+        max-width: 350px;
+        padding: 20px;
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 10px;
+        box-sizing: border-box;
+        margin-top: 90px;
+
+    }
+
+    .card {
+        font-size: 1.5rem;
+        width: 50px;
+        height: 50px;
+        background-color: white;
+        margin: 2px;
+        border: 5px solid rgba(255, 152, 0, 0.5);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        transition: background-color 0.5s;
+    }
+
+    .control-form {
+        display: flex;
+        flex-direction: column;
+        align-self: start;
+        align-items: center;
+        margin-top: 90px;
+        width: 100%;
+        padding: 10px;
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 10px;
+        max-width: 150px;
+        min-width: 100px;
+    }
+
+    .control-form input {
+        width: 30px;
+        margin: 3px;
+        border: #849e10 2px solid;
+        border-radius: 5px;
+    }
+
+    .control-form label[for="rows"] {
+        margin-right: 18px;
+
+    }
+
+    .control-form label {
+
+        color: white;
+        margin: 2px;
+        font-size: 10px;
+        font-weight: bolder;
+    }
+
+    button {
+        background-color: #FFEB3B;
+        font-size: 10px;
+        font-weight: 300;
+        font-family: 'Poppins', sans-serif;
+        border-radius: 8px;
+        color: black;
+        padding: 5px 10px;
+        margin: 3px;
+        transition: background-color 0.3s ease;
+    }
+
+    .hidden {
+        background-color: #849e10;
+    }
+
+    #game-board {
+        display: grid;
+        margin: 5px;
+
+    }
+
+    .win-message {
+        text-align: center;
+        font-size: 1em;
+        color: rgb(51, 255, 0);
+    }
+}
+
+@media (max-width: 350px) {
+
+    .header {
+        width: 100%;
+    }
+
+    header h1 {
+        font-size: 20px;
+
+    }
+
+    body {
+        background-image: url("../image/fruit-background.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: repeat;
+        font-family: Arial, sans-serif;
+        height: 100vh;
+
+    }
+
+    .body-section {
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+
+        width: 100%;
+        max-width: 350px;
+        /* Max width for larger screens */
+        padding: 20px;
+        background-color: rgba(0, 0, 0, 0.5);
+        /* Optional background color */
+        border-radius: 10px;
+        box-sizing: border-box;
+        margin-top: 70px;
+
+    }
+
+    .card {
+        font-size: 1rem;
+        width: 40px;
+        height: 40px;
+        background-color: white;
+        margin: 2px;
+        border: 5px solid rgba(255, 152, 0, 0.5);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        transition: background-color 0.5s;
+    }
+
+    .control-form {
+        display: flex;
+        flex-direction: column;
+        align-self: start;
+        align-items: center;
+        margin-top: 70px;
+        width: 100%;
+        padding: 10px;
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 10px;
+        max-width: 100px;
+        min-width: 50px;
+    }
+
+    .control-form input {
+        width: 25px;
+        margin: 3px;
+        border: #849e10 2px solid;
+        border-radius: 5px;
+    }
+
+    .control-form label[for="rows"] {
+        margin-right: 15px;
+
+    }
+
+    .control-form label {
+
+        color: white;
+        margin: 2px;
+        font-size: 10px;
+        font-weight: bolder;
+    }
+
+    button {
+        background-color: #FFEB3B;
+        font-size: 8px;
+        font-weight: 300;
+        font-family: 'Poppins', sans-serif;
+        border-radius: 8px;
+        color: black;
+        padding: 5px 10px;
+        margin: 3px;
+        transition: background-color 0.3s ease;
+    }
+
+    .hidden {
+        background-color: #849e10;
+    }
+
+    #game-board {
+        display: grid;
+        margin: 5px;
+
+    }
+
+    .win-message {
+        text-align: center;
+        font-size: 1em;
+        color: rgb(51, 255, 0);
+    }
+}
